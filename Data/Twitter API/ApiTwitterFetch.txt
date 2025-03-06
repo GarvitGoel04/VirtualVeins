@@ -1,0 +1,43 @@
+ Install tweepy
+bash
+Copy code
+pip install tweepy
+3. Modify the Code
+Here’s an updated version that includes authentication setup:
+
+python
+Copy code
+import tweepy
+
+# API setup and authentication
+consumer_key = 'your_consumer_key'
+consumer_secret = 'your_consumer_secret'
+access_token = 'your_access_token'
+access_token_secret = 'your_access_token_secret'
+
+# Authenticate with Twitter API
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_token_secret)
+api = tweepy.API(auth)
+
+# Fetch user tweets
+username = 'username'  # Replace with the Twitter handle you want to fetch
+tweets = api.user_timeline(screen_name=username, count=100)
+
+# Print tweets
+for tweet in tweets:
+    print(tweet.text)
+4. Replace Placeholder Values
+Replace your_consumer_key, your_consumer_secret, your_access_token, and your_access_token_secret with the values obtained from the Twitter Developer Console.
+Replace 'username' with the actual Twitter handle of the user whose tweets you want to fetch.
+5. Handle API Limits and Errors
+Add error handling to avoid issues like rate limits or invalid credentials:
+
+python
+Copy code
+try:
+    tweets = api.user_timeline(screen_name=username, count=100)
+    for tweet in tweets:
+        print(tweet.text)
+except tweepy.TweepError as e:
+    print(f"Error: {e}")

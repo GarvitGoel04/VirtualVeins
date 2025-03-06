@@ -1,0 +1,82 @@
+Data You Can Fetch with Twitter API
+1. User Timelines
+What You Get:
+Tweets from a specific user.
+Metadata such as timestamps, likes, retweets, and replies.
+How to Use:
+Analyze user activity patterns (e.g., time spent on social media).
+Examine how specific content impacts users’ emotions.
+python
+Copy code
+tweets = api.user_timeline(screen_name='username', count=100)
+2. Search Tweets
+What You Get:
+Tweets based on keywords, hashtags, or phrases.
+Real-time or historical data depending on the API tier.
+How to Use:
+Analyze public sentiment on trending topics.
+Evaluate emotional triggers in tweets (positive, negative, or neutral sentiment).
+python
+Copy code
+tweets = api.search_tweets(q='social media', count=100, lang='en')
+3. User Profile Data
+What You Get:
+User details (name, description, location, follower count, etc.).
+How to Use:
+Segment users into groups based on demographics or interests.
+Correlate user profile details with behavior or sentiment.
+python
+Copy code
+user = api.get_user(screen_name='username')
+print(user.description, user.followers_count)
+4. Trends
+What You Get:
+Trending topics on Twitter globally or by specific locations.
+How to Use:
+Identify topics of public interest.
+Evaluate how trending topics correlate with emotional states.
+python
+Copy code
+trends = api.get_place_trends(id=1)  # '1' for global trends
+5. Follower/Following Lists
+What You Get:
+Lists of followers or accounts a user follows.
+How to Use:
+Understand social circles and influences.
+Analyze network effects on mental health.
+python
+Copy code
+followers = api.followers(screen_name='username')
+6. Tweet Engagement Metrics
+What You Get:
+Likes, retweets, replies, and quote tweets for specific tweets.
+How to Use:
+Quantify engagement and its correlation with emotional tone.
+Evaluate how engaging or polarizing specific content is.
+7. Direct Messages and Mentions (Limited Access)
+What You Get:
+Mentions or interactions with a user (depending on API tier).
+How to Use:
+Analyze interpersonal interactions on the platform.
+Measure the emotional impact of direct communication.
+How It Benefits Your Project
+Emotional and Behavioral Analysis:
+
+Use sentiment analysis to classify tweets as positive, neutral, or negative.
+Understand how emotions expressed in tweets correlate with broader trends in mental health.
+Cognitive Effects:
+
+Measure user activity patterns to understand attention spans or overuse.
+Correlate time spent on social media with productivity and focus.
+Impact of Trends and Content:
+
+Analyze how specific trends or topics influence emotions (e.g., political debates causing stress).
+Evaluate whether exposure to certain hashtags increases anxiety or positivity.
+Real-Time Monitoring:
+
+Use real-time data to track emotional shifts in response to events (e.g., disasters, achievements).
+Build a dashboard that visualizes these shifts for educational or therapeutic purposes.
+Social Influence and Networks:
+
+Identify influential accounts and analyze their content's impact on followers.
+Evaluate peer influence within social networks.
