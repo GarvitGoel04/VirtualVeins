@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # VirtualVeins - Social Media Mental Health Research Dashboard
 
 A comprehensive research project analyzing the impact of social media on mental health, presented through an interactive web dashboard.
@@ -190,3 +191,33 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ---
 
 **VirtualVeins** - Understanding the digital age's impact on mental health through comprehensive research and data analysis. 
+=======
+# Virtual Veins
+
+**"Impact of Social Media on Human Cognition and Behaviour"**  
+A final year B.Tech project under the Department of Computer Science & Design, IMS Engineering College.
+
+## 🧠 Overview
+
+Virtual Veins is an academic research and data analysis project aimed at exploring how prolonged usage of social media influences human cognition, behavior, and emotional well-being. The project combines psychological insights, data collection, and analytical tools to derive meaningful conclusions.
+
+## 🎯 Objectives
+
+- To study the cognitive and behavioral impact of major social media platforms.
+- To conduct surveys and analyze user data for sentiment patterns.
+- To explore how social media affects attention span, memory, and mental health.
+- To propose possible solutions or design interventions to mitigate negative effects.
+
+## 🛠️ Technologies Used
+
+- Python (for data analysis and scripting)
+- Jupyter Notebook (`.ipynb` for visualizations)
+- Pandas, NumPy (data handling)
+- Scipy for ANOVA test and Others statistics 
+- Matplotlib, Seaborn (data visualization)
+- Excel & CSV (survey data collection)
+- Git for version control
+
+
+
+>>>>>>> 88e1914e30cb0adb71e84c0fae24d9cc82d69bfa
